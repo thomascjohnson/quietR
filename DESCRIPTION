@@ -1,0 +1,17 @@
+Package: quietR
+Type: Package
+Title: An extremely simple package that masks print, cat and message to allow 
+    them to be toggled on and off
+Version: 0.1.0
+Author: Thomas Johnson <thomascjohnson@gmail.com>
+Maintainer: Thomas Johnson <thomascjohnson@gmail.com>
+Description: It's common to implement some output suppression logic in R 
+    packages, but everyone ends up writing their own version. This package
+    intends to simplify that problem and allow a set of simple toggle functions
+    to be used to suppress console output.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat
+RoxygenNote: 6.1.1
