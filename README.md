@@ -28,7 +28,8 @@ enable_verbose("print")
 # Outputs
 print("Hi there!") 
  # Doesn't output
-cat("I won't output")```
+cat("I won't output")
+```
 
 ## Getting Help/Helping
 
