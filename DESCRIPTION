@@ -1,9 +1,8 @@
 Package: quietR
 Type: Package
-Title: An extremely simple package that masks print, cat and message to allow 
-    them to be toggled on and off
+Title: Simplify Output Verbosity
 Version: 0.1.0
-Author: Thomas Johnson <thomascjohnson@gmail.com>
+Authors@R: person("Thomas", "Johnson", email = "thomascjohnson@gmail.com", role = c("aut", "cre"))
 Maintainer: Thomas Johnson <thomascjohnson@gmail.com>
 Description: It's common to implement some output suppression logic in R 
     packages, but everyone ends up writing their own version. This package
