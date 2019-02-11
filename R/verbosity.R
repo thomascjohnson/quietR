@@ -21,6 +21,10 @@
 #' # Now it returns FALSE:
 #' is_verbose() #FALSE
 #' is_verbose("print") #FALSE
+#'
+#' enable_verbose("print")
+#' print("Hi there!") # Outputs
+#' cat("I won't output") # Doesn't output
 is_verbose <- function(func = c("print", "cat", "message")) {
   func <- match.arg(func, several.ok = TRUE)
 

@@ -53,4 +53,8 @@ disable_verbose()
 # Now it returns FALSE:
 is_verbose() #FALSE
 is_verbose("print") #FALSE
+
+enable_verbose("print")
+print("Hi there!") # Outputs
+cat("I won't output") # Doesn't output
 }
