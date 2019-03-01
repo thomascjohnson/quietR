@@ -25,13 +25,13 @@
 #' enable_verbose("print")
 #' print("Hi there!") # Outputs
 #' cat("I won't output") # Doesn't output
-is_verbose <- function(func = c("print", "cat", "message")) {
+is_verbose <- function(func = c("print", "cat", "message")) { # nocov start
   func <- match.arg(func, several.ok = TRUE)
 
   isTRUE(func %in% verbose_outputs())
-}
+} # nocov end
 
-verbose_outputs <- function() {
+verbose_outputs <- function() { # nocov start
   outputs <- getOption("quietR")
 
   if (is.null(outputs))
@@ -42,7 +42,7 @@ verbose_outputs <- function() {
     c()
   else
     outputs
-}
+} # nocov end
 
 #' @rdname verbosity
 #' @export

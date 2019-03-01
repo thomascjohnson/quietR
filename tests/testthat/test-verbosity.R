@@ -7,7 +7,9 @@ test_that("toggling functions correctly", {
 
   expect_silent(print("Hello World!"))
 
+  enable_print()
   disable_verbose("print")
+  disable_print()
 
   expect_silent(print("Hello World!"))
 
@@ -38,4 +40,10 @@ test_that("toggling functions correctly", {
   expect_message(message("Hello World!"))
   expect_output(cat("Hello World!"))
   expect_output(print("Hello World!"))
+
+  disable_message()
+  expect_silent(message("Hello World!"))
+
+  enable_message()
+  expect_message(message("Hello World, again!"))
 })
