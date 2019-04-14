@@ -4,10 +4,10 @@ Title: Simplify Output Verbosity
 Version: 0.1.0
 Authors@R: person("Thomas", "Johnson", email = "thomascjohnson@gmail.com", role = c("aut", "cre"))
 Maintainer: Thomas Johnson <thomascjohnson@gmail.com>
-Description: It's common to implement some output suppression logic in R 
-    packages, but everyone ends up writing their own version. quietR intends to 
-    simplify that problem and allow a set of simple toggle functions to be used 
-    to suppress console output.
+Description: Simplifies output suppression logic in R packages, as it's common
+    to develop some form of it in R. quietR intends to simplify that problem 
+    and allow a set of simple toggle functions to be used to suppress console 
+    output.
 License: MIT + file LICENSE
 URL: https://github.com/thomascjohnson/quietR
 BugReports: https://github.com/thomascjohnson/quietR/issues
